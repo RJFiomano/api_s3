@@ -1,6 +1,6 @@
 import express from 'express'
 import multer from 'multer';
-import { uploadFile, downloadFile, deleteFile, listFiles } from '../services/s3'
+import { uploadFile, downloadFile, deleteFile, listFiles } from '../services/s3.js'
 
 const router = express.Router()
 
