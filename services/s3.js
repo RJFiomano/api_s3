@@ -29,7 +29,7 @@ const BUCKET_NAME = process.env.AWS_S3_BUCKET;
    const downloadFile = async (filename) => {
     try {
       const res = await s3.getObject({ Bucket: BUCKET_NAME, Key: filename }).promise();
-      return { success: true, data: fs.writeFileSync('/Downloads/' + filename, res.Body) }
+      return { success: true, data: fs.writeFileSync('/temp/' + filename, res.Body) }
     } catch(error) {
       return { success: false, data: null }
     }
