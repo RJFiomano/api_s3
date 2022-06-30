@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import express from "express";
-import s3 from "./routes/s3";
+import s3 from "./routes/s3.js";
 import aws from "aws-sdk";
 
 const port = 3000
